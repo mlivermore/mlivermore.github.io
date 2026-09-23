@@ -101,7 +101,7 @@ PAGES["index.html"] = dict(
   </li>
   <li class="a-reg">
     <canvas class="mark" data-kind="reg" aria-hidden="true"></canvas>
-    <a href="scholarship.html#regulation">Regulation and administrative law</a>
+    <a href="scholarship.html#regulation">Regulation and governance</a>
     <p>How governments balance expertise, evidence, and analysis against legality and democratic accountability.</p>
   </li>
   <li class="a-comp">
@@ -148,7 +148,7 @@ PAGES["scholarship.html"] = dict(
 </section>
 
 <section class="field a-reg" id="regulation">
-  <header><canvas class="mark" data-kind="reg" aria-hidden="true"></canvas><h2>Regulation and administrative law</h2></header>
+  <header><canvas class="mark" data-kind="reg" aria-hidden="true"></canvas><h2>Regulation and governance</h2></header>
   <ul class="pubs">
 """ + "\n".join([
     pub(2024, "Presidential Transitions and Interest Group Participation in the Notice and Comment Process", "American Review of Public Administration", "54: 648", "Vladimir Eidelman, Anastassia Kornilova, and Onyi Lam"),
@@ -206,7 +206,7 @@ PAGES["miscellany.html"] = dict(
     row(2021, '<a href="https://administrativestate.gmu.edu/event/the-future-of-white-house-regulatory-oversight-in-the-biden-administration/">The Future of White House Regulatory Oversight in the Biden Administration</a>. Panel with Jennifer Nou and Stuart Shapiro, <i>C. Boyden Gray Center, George Mason University</i>, January 12.'),
     row(2020, '<a href="https://youtu.be/1fCsaobLoTs">Exploring <em>Reviving Rationality</em></a>. Book panel with Richard Revesz, Jonathan Adler, and Amy Sinden, moderated by Jonathan Cannon, <i>UVA Law</i>, November 17. Also discussed on <a href="https://www.resources.org/resources-radio/future-cost-benefit-analysis-michael-livermore-and-richard-revesz/">Resources Radio</a> and the Gray Center\'s <a href="https://ricochet.com/podcast/arbitrary-capricious/reviving-rationality-with-michael-livermore-and-richard-revesz/">Gray Matters</a> podcast.'),
     row(2019, '<a href="https://youtu.be/GLpboenw4eU">Michael Livermore Discusses <em>Law as Data</em></a>. <i>UVA Law</i>, June 3.'),
-    row(2019, '<a href="https://docs.house.gov/meetings/IF/IF02/20190521/109556/HHRG-116-IF02-Wstate-LivermoreM-20190521.pdf">Testimony</a> before the House Committee on Energy and Commerce, Subcommittee on Environment and Climate Change, May 21.'),
+    row(2019, '<a href="https://docs.house.gov/meetings/IF/IF02/20190521/109556/HHRG-116-IF02-Wstate-LivermoreM-20190521.pdf">Testimony</a> before the House Committee on Energy and Commerce, Subcommittee on Oversight and Investigations, May 21. <a href="https://youtu.be/LMmIu-fCDts">Video</a> of the hearing.'),
     row(2019, '<a href="https://www.law.virginia.edu/news/201905/lawyer-your-computer">The Lawyer in Your Computer</a>. <i>Common Law</i> podcast, UVA Law, May 21.'),
 ]) + """
   </ul>
