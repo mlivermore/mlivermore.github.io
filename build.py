@@ -421,6 +421,7 @@ PAGES["owcal.html"] = dict(
 </div>
 
 <h3>Schedules</h3>
+<p class="schedule-note">Presenters in <strong>bold</strong>. All times U.S. Eastern.</p>
 <ul class="years">
 """ + "\n".join(f'  <li><a href="#y{y}">{y.replace("-", "–")}</a></li>' for y in OWCAL_YEARS) + """
 </ul>

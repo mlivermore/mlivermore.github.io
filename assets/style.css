@@ -295,7 +295,7 @@ hr { border: 0; border-top: 1px solid var(--rule); margin: 2.5rem 0; }
 .season h2 { margin: 0 0 1rem; color: var(--comp); }
 .season p { font-size: 0.95rem; line-height: 1.5; padding-left: 9.5rem; display: flow-root; }
 .season .when { font-family: var(--sans); font-size: 0.78rem; color: var(--muted); float: left; width: 9rem; margin-left: -9.5rem; padding-top: 0.2rem; }
-.season p:last-child { padding-left: 0; text-indent: 0; font-family: var(--sans); font-size: 0.8rem; color: var(--muted); }
+.schedule-note { font-family: var(--sans); font-size: 0.8rem; color: var(--muted); margin: 0 0 0.75rem; }
 
 /* ---- Responsive ---- */
 
