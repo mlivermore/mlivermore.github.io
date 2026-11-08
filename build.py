@@ -143,8 +143,8 @@ PAGES["scholarship.html"] = dict(
 """ + "\n".join([
     pub(2024, "Valuing Diversity", "Journal of Ethics and Social Philosophy", "28: 264", url="https://doi.org/10.26556/jesp.v28i2.3317"),
     pub(2021, "Where Nature's Rights Go Wrong", "Virginia Law Review", "107: 1347", "Mauricio Guim", url="https://virginialawreview.org/articles/where-natures-rights-go-wrong/"),
+    pub(2019, "Sociopolitical Feedbacks and Climate Change", "Harvard Environmental Law Review", "43: 119", "Peter Howard", url="https://papers.ssrn.com/abstract=3348046"),
     pub(2014, "Rethinking Health-Based Environmental Standards", "New York University Law Review", "89: 1184", "Richard L. Revesz", url="https://nyulawreview.org/issues/volume-89-number-4/rethinking-health-based-environmental-standards/"),
-    pub(2013, "Patience is an Economic Virtue: Real Options, Natural Resources, and Offshore Oil", "University of Colorado Law Review", "84: 581", url="https://scholar.law.colorado.edu/lawreview/vol84/iss3/3"),
 ]) + """
   </ul>
 </section>
