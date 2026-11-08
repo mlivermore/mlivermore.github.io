@@ -144,6 +144,7 @@ PAGES["scholarship.html"] = dict(
     pub(2024, "Valuing Diversity", "Journal of Ethics and Social Philosophy", "28: 264", url="https://doi.org/10.26556/jesp.v28i2.3317"),
     pub(2021, "Where Nature's Rights Go Wrong", "Virginia Law Review", "107: 1347", "Mauricio Guim", url="https://virginialawreview.org/articles/where-natures-rights-go-wrong/"),
     pub(2014, "Rethinking Health-Based Environmental Standards", "New York University Law Review", "89: 1184", "Richard L. Revesz", url="https://nyulawreview.org/issues/volume-89-number-4/rethinking-health-based-environmental-standards/"),
+    pub(2013, "Patience is an Economic Virtue: Real Options, Natural Resources, and Offshore Oil", "University of Colorado Law Review", "84: 581", url="https://scholar.law.colorado.edu/lawreview/vol84/iss3/3"),
 ]) + """
   </ul>
 </section>
@@ -152,6 +153,7 @@ PAGES["scholarship.html"] = dict(
   <header><canvas class="mark" data-kind="reg" aria-hidden="true"></canvas><h2>Regulation and governance</h2></header>
   <ul class="pubs">
 """ + "\n".join([
+    pub(2024, "Presidential Transitions and Interest Group Participation in the Notice and Comment Process", "American Review of Public Administration", "54: 648", "Vladimir Eidelman, Anastassia Kornilova, and Onyi Lam", url="https://doi.org/10.1177/02750740241245362"),
     pub(2019, "Administrative Law in an Era of Partisan Volatility", "Emory Law Journal", "69: 1", "Daniel Richardson", url="https://scholarlycommons.law.emory.edu/elj/vol69/iss1/1"),
     pub(2017, "The Perils of Experimentation", "Yale Law Journal", "126: 636", url="https://www.yalelawjournal.org/article/the-perils-of-experimentation"),
     pub(2013, "Regulatory Review, Capture, and Agency Inaction", "Georgetown Law Journal", "101: 1337", "Richard L. Revesz", url="https://gretchen.law.nyu.edu/fac-articles/943"),
@@ -165,6 +167,7 @@ PAGES["scholarship.html"] = dict(
 """ + "\n".join([
     pub(2025, "Lawma: The Power of Specialization for Legal Annotation", "International Conference on Learning Representations (ICLR)", "", "Ricardo Dominguez-Olmedo and others", url="https://proceedings.iclr.cc/paper_files/paper/2025/hash/56e5719d297fc1a778b0ec77cb6278d7-Abstract-Conference.html"),
     pub(2024, "Judicial Dark Matter", "University of Chicago Law Review", "91: 1949", "Nina Varsava, Keith Carlson, and Daniel N. Rockmore", url="https://chicagounbound.uchicago.edu/uclrev/vol91/iss7/2"),
+    pub(2021, "Modeling Law Search as Prediction", "Artificial Intelligence and Law", "29: 3", "Faraz Dadgostari, Mauricio Guim, Peter A. Beling, and Daniel N. Rockmore", url="https://doi.org/10.1007/s10506-020-09261-5"),
     pub(2017, "The U.S. Supreme Court and the Judicial Genre", "Arizona Law Review", "59: 837", "Allen B. Riddell and Daniel N. Rockmore", url="https://journals.librarypublishing.arizona.edu/arizlrev/article/id/6975"),
 ]) + """
   </ul>
