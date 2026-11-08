@@ -35,7 +35,7 @@ SHELL = """<!DOCTYPE html>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400;1,6..72,500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="{base}assets/style.css">
+<link rel="stylesheet" href="{base}assets/style.css?v={cssv}">
 </head>
 <body>
 <header class="rail">
@@ -436,6 +436,10 @@ REDIRECT = """<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><title>
 """
 
 
+import hashlib
+CSSV = hashlib.md5((ROOT / "assets" / "style.css").read_bytes()).hexdigest()[:8]
+
+
 def build():
     (ROOT / "podcast").mkdir(exist_ok=True)
     for fname, page in PAGES.items():
@@ -445,7 +449,7 @@ def build():
             body = body.replace("{" + k + "}", v)
         html = SHELL.format(
             title=page["title"], description=page["description"], base=base,
-            nav=nav_html(page.get("current", fname), base), body=body, **LINKS,
+            nav=nav_html(page.get("current", fname), base), body=body, cssv=CSSV, **LINKS,
         )
         (ROOT / fname).write_text(html, encoding="utf-8")
     print("wrote", len(PAGES), "pages")
