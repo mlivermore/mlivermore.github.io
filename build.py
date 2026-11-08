@@ -70,8 +70,10 @@ def nav_html(current, base=""):
     return "\n".join(out)
 
 
-def pub(year, title, venue, cite="", co="", book=False):
-    """One publication row. venue is italicised; cite is volume/page."""
+def pub(year, title, venue, cite="", co="", book=False, url=""):
+    """One publication row. venue is italicised; cite is volume/page; url links the title."""
+    if url:
+        title = f'<a href="{url}">{title}</a>'
     t = f"<em>{title}</em>" if book else f"“{title},”"
     v = f" <i>{venue}</i>" if venue else ""
     c = f" {cite}" if cite else ""
@@ -139,10 +141,9 @@ PAGES["scholarship.html"] = dict(
   <header><canvas class="mark" data-kind="env" aria-hidden="true"></canvas><h2>Environmental law, ethics, and economics</h2></header>
   <ul class="pubs">
 """ + "\n".join([
-    pub(2024, "Valuing Diversity", "Journal of Ethics and Social Philosophy", "28: 264"),
-    pub(2021, "Where Nature's Rights Go Wrong", "Virginia Law Review", "107: 1347", "Mauricio Guim"),
-    pub(2019, "Sociopolitical Feedbacks and Climate Change", "Harvard Environmental Law Review", "43: 119", "Peter Howard"),
-    pub(2014, "Rethinking Health-Based Environmental Standards", "New York University Law Review", "89: 1184", "Richard L. Revesz"),
+    pub(2024, "Valuing Diversity", "Journal of Ethics and Social Philosophy", "28: 264", url="https://doi.org/10.26556/jesp.v28i2.3317"),
+    pub(2021, "Where Nature's Rights Go Wrong", "Virginia Law Review", "107: 1347", "Mauricio Guim", url="https://virginialawreview.org/articles/where-natures-rights-go-wrong/"),
+    pub(2019, "Sociopolitical Feedbacks and Climate Change", "Harvard Environmental Law Review", "43: 119", "Peter Howard", url="https://papers.ssrn.com/abstract=3348046"),
 ]) + """
   </ul>
 </section>
@@ -151,10 +152,10 @@ PAGES["scholarship.html"] = dict(
   <header><canvas class="mark" data-kind="reg" aria-hidden="true"></canvas><h2>Regulation and governance</h2></header>
   <ul class="pubs">
 """ + "\n".join([
-    pub(2024, "Presidential Transitions and Interest Group Participation in the Notice and Comment Process", "American Review of Public Administration", "54: 648", "Vladimir Eidelman, Anastassia Kornilova, and Onyi Lam"),
-    pub(2020, "Reviving Rationality: Saving Cost-Benefit Analysis for the Sake of the Environment and Our Health", "", "Oxford University Press", "Richard L. Revesz", book=True),
-    pub(2019, "Administrative Law in an Era of Partisan Volatility", "Emory Law Journal", "69: 1", "Daniel Richardson"),
-    pub(2018, "Computationally Assisted Participatory Rulemaking", "Notre Dame Law Review", "93: 977", "Vladimir Eidelman and Brian Grom"),
+    pub(2024, "Presidential Transitions and Interest Group Participation in the Notice and Comment Process", "American Review of Public Administration", "54: 648", "Vladimir Eidelman, Anastassia Kornilova, and Onyi Lam", url="https://doi.org/10.1177/02750740241245362"),
+    pub(2020, "Reviving Rationality: Saving Cost-Benefit Analysis for the Sake of the Environment and Our Health", "", "Oxford University Press", "Richard L. Revesz", book=True, url="https://global.oup.com/academic/product/reviving-rationality-9780197539446"),
+    pub(2019, "Administrative Law in an Era of Partisan Volatility", "Emory Law Journal", "69: 1", "Daniel Richardson", url="https://scholarlycommons.law.emory.edu/elj/vol69/iss1/1"),
+    pub(2018, "Computationally Assisted Regulatory Participation", "Notre Dame Law Review", "93: 977", "Vladimir Eidelman and Brian Grom", url="https://scholarship.law.nd.edu/ndlr/vol93/iss3/2"),
 ]) + """
   </ul>
 </section>
@@ -163,12 +164,12 @@ PAGES["scholarship.html"] = dict(
   <header><canvas class="mark" data-kind="comp" aria-hidden="true"></canvas><h2>Computational legal studies</h2></header>
   <ul class="pubs">
 """ + "\n".join([
-    pub(2024, "Judicial Dark Matter", "University of Chicago Law Review", "91: 1949", "Nina Varsava, Keith Carlson, and Daniel N. Rockmore"),
-    pub(2023, "Are Lawyers' Case Selection Decisions Biased? A Field Experiment on Access to Justice", "Journal of Legal Studies", "52: 273", "Jens Frankenreiter"),
-    pub(2021, "Modeling Law Search as Prediction", "Artificial Intelligence and Law", "29: 3", "Faraz Dadgostari, Mauricio Guim, Peter A. Beling, and Daniel N. Rockmore"),
-    pub(2020, "The Problem of Data Bias in the Pool of Published U.S. Appellate Court Opinions", "Journal of Empirical Legal Studies", "17: 224", "Keith Carlson and Daniel N. Rockmore"),
-    pub(2019, "Law as Data: Computation, Text, and the Future of Legal Analysis", "", "Santa Fe Institute Press", "Daniel N. Rockmore (editors)", book=True),
-    pub(2017, "The U.S. Supreme Court and the Judicial Genre", "Arizona Law Review", "59: 837", "Allen B. Riddell and Daniel N. Rockmore"),
+    pub(2026, "The Value of Citations in the Labor Market for Legal Academics", "American Law and Economics Review", "", "Joshua Fischman", url="https://doi.org/10.1093/aler/ahaf020"),
+    pub(2025, "Lawma: The Power of Specialization for Legal Annotation", "International Conference on Learning Representations (ICLR)", "", "Ricardo Dominguez-Olmedo and others", url="https://proceedings.iclr.cc/paper_files/paper/2025/hash/56e5719d297fc1a778b0ec77cb6278d7-Abstract-Conference.html"),
+    pub(2024, "Judicial Dark Matter", "University of Chicago Law Review", "91: 1949", "Nina Varsava, Keith Carlson, and Daniel N. Rockmore", url="https://chicagounbound.uchicago.edu/uclrev/vol91/iss7/2"),
+    pub(2023, "Are Lawyers' Case Selection Decisions Biased? A Field Experiment on Access to Justice", "Journal of Legal Studies", "52: 273", "Jens Frankenreiter", url="https://doi.org/10.1086/723282"),
+    pub(2020, "The Problem of Data Bias in the Pool of Published U.S. Appellate Court Opinions", "Journal of Empirical Legal Studies", "17: 224", "Keith Carlson and Daniel N. Rockmore", url="https://doi.org/10.1111/jels.12253"),
+    pub(2019, "Law as Data: Computation, Text, and the Future of Legal Analysis", "", "Santa Fe Institute Press", "Daniel N. Rockmore (editors)", book=True, url="https://www.sfipress.org/books/law-as-data"),
 ]) + """
   </ul>
 </section>
@@ -358,7 +359,6 @@ PAGES["podcast.html"] = dict(
     <ul class="linkrow">
       <li><a href="https://open.spotify.com/show/2iSYoYzF3V6pMwNAXNzxH2">Spotify</a></li>
       <li><a href="https://podcasts.apple.com/us/podcast/free-range-with-mike-livermore/id1588749945">Apple Podcasts</a></li>
-      <li><a href="https://soundcloud.com/user-311970225">SoundCloud</a></li>
     </ul>
   </div>
 </div>
@@ -388,8 +388,6 @@ def episode_pages():
             embed = f'<audio class="player" controls preload="none" src="{e["mp3"]}"></audio>'
         else:
             embed = ""
-        meta = " ".join(x for x in [nice_date(e["aired"]) if e.get("aired") else "",
-                                    f'<a href="{e["soundcloud"]}">SoundCloud</a>' if e.get("soundcloud") else ""] if x)
         nav = '<p class="epnav">'
         nav += f'<a href="{ep_file(prev_e)}">Previous: {ep_title(prev_e)}</a>' if prev_e else ""
         nav += (" " if prev_e and next_e else "") + (f'<a href="{ep_file(next_e)}">Next: {ep_title(next_e)}</a>' if next_e else "")

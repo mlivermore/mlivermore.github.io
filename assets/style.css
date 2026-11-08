@@ -293,8 +293,8 @@ hr { border: 0; border-top: 1px solid var(--rule); margin: 2.5rem 0; }
 
 .season { max-width: var(--measure); margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--rule); }
 .season h2 { margin: 0 0 1rem; color: var(--comp); }
-.season p { font-size: 0.95rem; line-height: 1.5; padding-left: 9rem; text-indent: -9rem; }
-.season .when { font-family: var(--sans); font-size: 0.78rem; color: var(--muted); display: inline-block; width: 9rem; text-indent: 0; vertical-align: top; padding-top: 0.2rem; }
+.season p { font-size: 0.95rem; line-height: 1.5; padding-left: 9.5rem; display: flow-root; }
+.season .when { font-family: var(--sans); font-size: 0.78rem; color: var(--muted); float: left; width: 9rem; margin-left: -9.5rem; padding-top: 0.2rem; }
 .season p:last-child { padding-left: 0; text-indent: 0; font-family: var(--sans); font-size: 0.8rem; color: var(--muted); }
 
 /* ---- Responsive ---- */
@@ -345,8 +345,8 @@ hr { border: 0; border-top: 1px solid var(--rule); margin: 2.5rem 0; }
   .shelf .cover { display: block; max-width: 9rem; }
   .eps li { grid-template-columns: 2.5rem minmax(0, 1fr); gap: 0.75rem; }
   .years { grid-template-columns: repeat(3, minmax(0, 1fr)); max-width: none; }
-  .season p { padding-left: 0; text-indent: 0; }
-  .season .when { display: block; width: auto; padding: 0 0 0.15rem; }
+  .season p { padding-left: 0; }
+  .season .when { display: block; float: none; width: auto; margin-left: 0; padding: 0 0 0.15rem; }
   .epnav { flex-direction: column; gap: 0.75rem; }
   .videos { grid-template-columns: 1fr; }
   .player { max-width: none; }
